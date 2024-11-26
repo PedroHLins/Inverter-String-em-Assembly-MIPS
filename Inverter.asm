@@ -22,7 +22,7 @@
 		beq $t3, $zero inverter # Quando a palavra chegar ao fim o seu valor sera 0, ou seja vai estar na hora de inverter
 		addi $t2, $t2, 1 # Contador de caracteres na palavra sendo incrementado
 		addi $t0, $t0, 1 #Avançando no vetor para a proxima casa em byte
-		j loop #Incrementa um valor a mais para o nosso vetor de caracteres e para o contador
+		j loop
 		
 	inverter:
 		subi $t2, $t2, 1 # A incremetação ira registrar o /0 também, então tiramos o /0 já que é um valor nulo e não é parte da palavra
